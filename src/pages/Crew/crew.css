@@ -1,0 +1,147 @@
+.crew {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-image: url("../../../public/assets/photo/crew-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 212px;
+}
+.photo {
+  height: 654px;
+  /* object-fit: cover; */
+}
+.titleTab {
+  margin: 0;
+}
+.info {
+  max-width: 650px;
+  margin-bottom: 120px;
+  padding-top: 156px;
+}
+.desc {
+  width: 100%;
+  max-width: 444px;
+}
+
+wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.description {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.5;
+  margin-bottom: 15px;
+}
+.titleTabs {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 56px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 27px;
+}
+.information {
+  font-family: var(--third-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 178%;
+  color: #d0d6f9;
+  margin-bottom: 120px;
+}
+.tabBtn {
+  display: flex;
+  gap: 24px;
+}
+.circleBtn {
+  width: 15px;
+  height: 15px;
+  background-color: #323030;
+  border-radius: 50%;
+}
+.active {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+@media (max-width: 970px) {
+  wrap {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .info {
+    margin-bottom: 40px;
+  }
+  .title {
+    font-size: 28px;
+    margin-bottom: 60px;
+  }
+  .desc {
+    margin: 0 auto;
+  }
+  .tabBtn {
+    width: 88px;
+    margin: 0 auto;
+    gap: 16px;
+  }
+  .circleBtn {
+    width: 10px;
+    height: 10px;
+  }
+  .active {
+    width: 10px;
+    height: 10px;
+  }
+  .information {
+    margin-bottom: 40px;
+  }
+  .titleTabs {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 570px) {
+  .crew {
+    padding-top: 150px;
+  }
+  wrap {
+    flex-direction: column-reverse;
+  }
+  .info {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 32px;
+  }
+  .image {
+    width: 327px;
+    border-bottom: 1px solid #383b4b;
+    margin-bottom: 32px;
+    img {
+      height: 177px;
+      object-fit: cover;
+      object-fit: fill;
+    }
+  }
+  .info {
+    padding-top: 0;
+  }
+}
+@media (max-width: 400px) {
+  .titleTabs {
+    font-size: 24px;
+  }
+  .description {
+    font-size: 16px;
+  }
+  .information {
+    font-size: 15px;
+  }
+}
