@@ -60,10 +60,10 @@ span {
     font-size: 14px;
   }
 }
-.list-active {
+.active {
   position: relative;
 }
-.list-active::after {
+.active::after {
   position: absolute;
   content: "";
   width: 100%;
