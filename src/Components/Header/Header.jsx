@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./header.css";
 import Icon from "../../../public/assets/icons/logo.svg";
 import { useState } from "react";
@@ -25,8 +25,8 @@ const Header = ({setIsActive}) => {
         {navList.map(item=>{
             const {id,text,link,textNum}=item
             return (
-                <li key={id} onClick={()=>navGetIsActive(id)} className={navIsActive==id?"list-active":""}>
-                    <Link to={link}><b>{textNum}</b> {text}</Link>
+                <li key={id} onClick={()=>navGetIsActive(id)}>
+                    <NavLink to={link}><b>{textNum}</b> {text}</NavLink>
                 </li>
             )
         })}
